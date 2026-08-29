@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    uses: LegionForge/dev-rig/.github/workflows/lint.yml@main
+  test:
+    uses: LegionForge/dev-rig/.github/workflows/test.yml@main
+  sast:
+    uses: LegionForge/dev-rig/.github/workflows/sast.yml@main
+  audit:
+    uses: LegionForge/dev-rig/.github/workflows/audit.yml@main
+  secrets:
+    uses: LegionForge/dev-rig/.github/workflows/secrets.yml@main
+  sbom:
+    uses: LegionForge/dev-rig/.github/workflows/sbom.yml@main

@@ -1,0 +1,23 @@
+version: 0.1
+mode: quality-adjusted-savings
+limits:
+  governor_lines_warn: 100
+  artifact_warn_tokens: 8000
+  checkpoint_after_turns: 20
+  max_quality_regression_percent: 5
+required_metrics: [errors, retries, review_time, repeated_work]
+retention:
+  raw_evidence_must_be_recoverable: true
+  checkpoint_required_before_reset: true
+  exact_error_data_required: true
+controls:
+  narrow_retrieval: default
+  deterministic_output_compression: default
+  isolated_large_reads: preferred
+  native_compaction: preferred
+  lossless_external_recall: preferred_when_summary_risk_is_high
+  model_routing: experiment-only
+  cache_keepalive: provider-specific-experiment-only
+  session_config_changes: cache-epoch-required
+  subagent_delegation: break-even-check-required
+  unattended_work: owner-budget-stop-condition-required

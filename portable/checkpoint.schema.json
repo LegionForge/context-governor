@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LegionForge Context Checkpoint",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "objective", "acceptance", "status", "next_action"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "objective": {"type": "string", "minLength": 1},
+    "acceptance": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string", "enum": ["planned", "in_progress", "blocked", "ready_for_review", "complete"]},
+    "decisions": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "array", "items": {"type": "string"}},
+    "changed_files": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "tests": {"type": "array", "items": {"type": "string"}},
+    "blockers": {"type": "array", "items": {"type": "string"}},
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "next_action": {"type": "string", "minLength": 1}
+  }
+}

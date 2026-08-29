@@ -1,0 +1,51 @@
+version: 0.1
+owner: "JP Cruz <jp@legionforge.org>"
+organization: "https://legionforge.org"
+effective: "2026-08-28 America/Chicago"
+quality_guardrails:
+  max_regression_percent: 5
+  required_metrics: [errors, retries, review_time, repeated_work]
+defaults:
+  artifact_warn_tokens: 8000
+  checkpoint_turns: 20
+  usage_review: monthly
+rules:
+  - id: R1
+    name: measure-before-tuning
+    enforcement: required-gate
+  - id: R2
+    name: decision-relevant-context-only
+    enforcement: automated-check
+  - id: R3
+    name: correct-in-place
+    enforcement: workflow-default
+  - id: R4
+    name: compress-deterministic-material
+    enforcement: automated-check
+  - id: R5
+    name: prune-ambient-configuration
+    enforcement: automated-check
+  - id: R6
+    name: minimum-viable-model-and-harness
+    enforcement: advisory
+  - id: R7
+    name: checkpoint-at-state-boundary
+    enforcement: required-gate
+  - id: R8
+    name: distinguish-reused-cached-and-billable
+    enforcement: required-gate
+  - id: R9
+    name: evidence-before-major-escalation
+    enforcement: required-gate
+  - id: R10
+    name: bounded-anthropic-cache-keepalive
+    enforcement: advisory
+  - id: R11
+    name: stable-cache-sensitive-session-configuration
+    enforcement: workflow-default
+  - id: R12
+    name: delegation-break-even-check
+    enforcement: required-gate
+  - id: R13
+    name: bounded-unattended-work
+    enforcement: required-gate

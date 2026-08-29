@@ -1,0 +1,9 @@
+# Local benchmark output and evidence caches
+.context-cache/
+.context-runs/
+*.local.json
+*.local.yaml
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
