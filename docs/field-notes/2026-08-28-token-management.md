@@ -27,6 +27,27 @@ The most transferable control is context hygiene: make relevance explicit, reduc
 4. Treat 90% as Nate's reported target for an experiment, not as an expected result for this project.
 5. Treat `/loop 3m` keepalive as a bounded Anthropic experiment, never as an always-on optimization.
 
+## 2026-08-29 release and R&D update
+
+Problem: the project needed a public, attributable release and a current
+developer-focused research direction without overstating independent
+authorship.
+
+Evidence: `LegionForge/context-governor` was created publicly on GitHub;
+`v0.1.0` and `v0.1.1` were published; commit `efaf4c0` added the developer
+context-management R&D note; GitHub topics were added for `ai-agents`,
+`context-engineering`, `token-optimization`, `codex`, and related terms.
+
+Mechanism: the repository now separates source attribution, transferred
+practices, and LegionForge project decisions. The R&D note records current
+first-party guidance around repository maps, just-in-time retrieval,
+structured state, compaction, and bounded tools, with matched-task validation
+required before adopting defaults.
+
+Transfer: public agent-workflow artifacts should identify their source lineage
+prominently, preserve exact evidence in a durable register, and treat research
+recommendations as hypotheses until quality-adjusted benchmarks pass.
+
 ## Uncertainty
 
 The supplied article is partially paywalled, and the public YouTube page did not expose a full transcript. The transcript-derived rules above are therefore confidence-rated as medium until verified against the video or a first-party transcript. Provider billing, cache discounts, cache refresh semantics in Claude Code, and hidden context remain provider-specific; do not infer them from local counters.
