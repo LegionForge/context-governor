@@ -12,6 +12,16 @@ metadata:
 
 Use this skill to control context growth without hiding evidence or reducing verification quality.
 
+## Origin and attribution
+
+This skill is a LegionForge adaptation of Nate B. Jones's videos “Paste This
+Into Claude: 15 Rules to Never Hit a Token Limit Again” and “Three OpenAI
+Engineers Shipped A Million Lines. Your Ten-Hour Agent Run Starts Here,” plus
+the references and research listed in the repository's
+[`docs/ATTRIBUTIONS.md`](../../../docs/ATTRIBUTIONS.md). It is not an
+independently originated method. The attribution register distinguishes source
+material from LegionForge's transferred practices and project decisions.
+
 ## Before reading or calling tools
 
 - State the immediate decision or artifact the call must support.
