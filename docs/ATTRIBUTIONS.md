@@ -35,6 +35,8 @@ endorsements by the source authors.
 | Julius Brussee | Caveman honest numbers | [HONEST-NUMBERS.md](https://github.com/JuliusBrussee/caveman/blob/main/docs/HONEST-NUMBERS.md) | Output-compression tradeoff evidence |
 | JetBrains | Speak to AI agents like cavemen to save tokens | [benchmark article](https://blog.jetbrains.com/ai/2026/07/speak-to-ai-agents-like-cavemen-tosave-tokens/) | Independent comparison and quality caveat |
 | Anthropic | Claude pricing and prompt caching | [pricing documentation](https://docs.anthropic.com/en/docs/about-claude/pricing) | Provider-specific cache evidence |
+| OpenAI | Harness engineering; Codex agent loop; Codex-maxxing for long-running work | [harness](https://openai.com/index/harness-engineering/), [agent loop](https://openai.com/index/unrolling-the-codex-agent-loop/), [Codex-maxxing](https://openai.com/index/codex-maxxing-long-running-work/) | Developer context and continuity R&D |
+| Anthropic | Effective harnesses for long-running agents | [engineering article](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | Long-horizon continuity R&D |
 
 The project’s policies, thresholds, and enforcement levels are LegionForge
 project decisions informed by these sources, not quotations or claims made by

@@ -13,6 +13,8 @@ Start with the [token-management policy](docs/TOKEN-MANAGEMENT-POLICY.md) and th
 
 See the [source register](docs/ATTRIBUTIONS.md) for the two Nate B. Jones
 videos, their authorship, and the other references informing this project.
+Current developer-focused research is tracked in the [context-management R&D
+note](docs/DEVELOPER-CONTEXT-RD.md).
 
 ## Design principle
 
