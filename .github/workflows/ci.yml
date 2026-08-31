@@ -14,6 +14,10 @@ jobs:
     uses: LegionForge/dev-rig/.github/workflows/test.yml@main
   sast:
     uses: LegionForge/dev-rig/.github/workflows/sast.yml@main
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
   audit:
     uses: LegionForge/dev-rig/.github/workflows/audit.yml@main
   secrets:
